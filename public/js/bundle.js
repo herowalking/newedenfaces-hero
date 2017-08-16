@@ -2357,6 +2357,7 @@ exports['default'] = _react2['default'].createElement(
     _react2['default'].createElement(_reactRouter.Route, { path: '/add', handler: _componentsAddCharacter2['default'] }),
     _react2['default'].createElement(_reactRouter.Route, { path: '/characters/:id', handler: _componentsCharacter2['default'] }),
     _react2['default'].createElement(_reactRouter.Route, { path: '/shame', handler: _componentsCharacterList2['default'] }),
+    _react2['default'].createElement(_reactRouter.Route, { path: '/stats', handler: _componentsStats2['default'] }),
     _react2['default'].createElement(
         _reactRouter.Route,
         { path: ':category', handler: _componentsCharacterList2['default'] },

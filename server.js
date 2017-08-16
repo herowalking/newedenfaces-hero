@@ -1,5 +1,3 @@
-require('babel-register');
-
 var path = require('path');
 var express = require('express');
 var bodyParser = require('body-parser');
@@ -11,7 +9,6 @@ var colors = require('colors');
 var mongoose = require('mongoose');
 var request = require('request');
 var React = require('react');
-var ReactDOM = require('react-dom/server');
 var Router = require('react-router');
 var swig  = require('swig');
 var xml2js = require('xml2js');
