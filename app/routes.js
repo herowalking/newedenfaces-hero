@@ -12,7 +12,7 @@ export default (
         <Route path='/' handler={Home} />
         <Route path='/add' handler={AddCharacter} />
         <Route path='/characters/:id' handler={Character} />
-        <Route path='/shame' handler={CharacterList} />
+        {/*<Route path='/shame' handler={CharacterList} />*/}
         <Route path='/stats' handler={Stats} />
         <Route path=':category' handler={CharacterList}>
             <Route path=':race' handler={CharacterList}>

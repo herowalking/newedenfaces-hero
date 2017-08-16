@@ -2356,7 +2356,6 @@ exports['default'] = _react2['default'].createElement(
     _react2['default'].createElement(_reactRouter.Route, { path: '/', handler: _componentsHome2['default'] }),
     _react2['default'].createElement(_reactRouter.Route, { path: '/add', handler: _componentsAddCharacter2['default'] }),
     _react2['default'].createElement(_reactRouter.Route, { path: '/characters/:id', handler: _componentsCharacter2['default'] }),
-    _react2['default'].createElement(_reactRouter.Route, { path: '/shame', handler: _componentsCharacterList2['default'] }),
     _react2['default'].createElement(_reactRouter.Route, { path: '/stats', handler: _componentsStats2['default'] }),
     _react2['default'].createElement(
         _reactRouter.Route,
@@ -2369,6 +2368,7 @@ exports['default'] = _react2['default'].createElement(
     )
 );
 module.exports = exports['default'];
+/*<Route path='/shame' handler={CharacterList} />*/
 
 },{"./components/AddCharacter":9,"./components/App":10,"./components/Character":11,"./components/CharacterList":12,"./components/Home":14,"./components/Stats":16,"react":"react","react-router":"react-router"}],19:[function(require,module,exports){
 'use strict';

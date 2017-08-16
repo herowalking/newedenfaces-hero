@@ -141,21 +141,6 @@ app.put('/api/characters', function(req, res, next) {
 });
 
 /**
- * GET /api/characters/shame
- * Returns 100 lowest ranked characters.
- */
-app.get('/api/characters/shame', function(req, res, next) {
-    Character
-        .find()
-        .sort('-losses')
-        .limit(100)
-        .exec(function(err, characters) {
-            if (err) return next(err);
-            res.send(characters);
-        });
-});
-
-/**
  * GET /api/characters/top
  * Return 100 highest ranked characters. Filter by gender, race and bloodline.
  */
@@ -180,6 +165,21 @@ app.get('/api/characters/top', function(req, res, next) {
                 return 0;
             });
 
+            res.send(characters);
+        });
+});
+
+/**
+ * GET /api/characters/shame
+ * Returns 100 lowest ranked characters.
+ */
+app.get('/api/characters/shame', function(req, res, next) {
+    Character
+        .find()
+        .sort('-losses')
+        .limit(100)
+        .exec(function(err, characters) {
+            if (err) return next(err);
             res.send(characters);
         });
 });
